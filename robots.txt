@@ -1,0 +1,2 @@
+User-agent: Yandex
+Disallow: https://emptyne.github.io/Zapret.html
