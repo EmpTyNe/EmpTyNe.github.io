@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head><meta charset="UTF-8">
+   <link rel="stylesheet" href="styles.css"/>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Задание1</title>
+   <title>Мой сайт</title>
+   <style> body{background-color: #262626;} </style>
   
 </head>
-<body>
-    <h1><strong>Маркированный список гиперсылок: </strong></h1>
+<body style="margin:0;">
+   <header>
+   <div class="block1">
+      <img class="img1" src="https://yt3.ggpht.com/a/AATXAJzeGLKK0sunxe8QYdWOG4HwBEWMt_ATxa9PhOCa=s900-c-k-c0xffffffff-no-rj-mo">
+      <div class="block2">Главная страница получается</div>
+      <div class="text1">
+      <div class="block4">
+         <Ul id="navbar">
+            <li> <a href="https://vk.com/liaximnester">Vk</a></li>
+            <li> <a href="https://github.com/EmpTyNe">GitHub</a></li>
+            <li> <a href="https://www.youtube.com">YouTube</a></li>
+         </Ul>
+      </div>
+      </div>
+   </div>
+   </header>
+   <nav>
+   <div class="text1">
+    <div class="block3">
+    <h2><strong> Маркированный список гиперсылок:</strong></h2>
     <ul>
       <li><a href="http://kubsu.ru/">Абсолютная гиперсылка на главную страницу сайта kubsu.ru</a></li>
       
       <li><a href="https://kubsu.ru/">Абсолютная гиперсылка на главную сайта kubsu.ru в протоколе https</a></li>
       
       <li> <a href="https://youtu.be/dQw4w9WgXcQ?si=OL54knhaEEixijpw">
-         <img src="notRickRoll.jpg" width="200" height="200" width="200">
-      </a> </li>
+         <img src="notRickRoll.jpg" width="200" height="200" width="200"> </a> </li>
       <li> <a href="/Vnutr.html">Внутренняя страница</a> </li>
       <li> <a href="/index.html">Главная страница</a> </li>
-      <li> <nav> <a href="#about">Фрагмент страницы </a> </li>
-         </nav>
-      </header>
-         </li>
+      <li> <a href="#about">Фрагмент страницы </a> </li>
       <li> <a href="https://emptyne.github.io/index.html?param1=1&param2=2&param3=3">3параметра</a> </li>
       <li> <a href="https://emptyne.github.io/Vnutr.html#about-color" class="site" target="_blank">Параметр с id</a></li>
       <li> <a href="./dopstr.html"> Относительная на страницу в текущем каталоге </a> </li>
@@ -48,8 +64,56 @@
             <li> <a href="https://youtu.be/FpouoDphV-I?si=aVSB-kZQobUGSH1T" title="Топовый трек 2">Топовый трек 2</a></li>
 
          </ol> </li>
-      <li> <a href="ftp://user1:password12@test.rebex.net/Temp/file.txt">Файл на ftp</a></li>
+      <li> <a href="ftp://user1:password12@test.rebex.net/Temp/file.txt">Файл на ftp</a></li> </ul> </div> </div> </nav>
 
+      <nav>
+         <div class="block3">
+         <div class="text1">
+         <table>
+            <tr>
+               <th>№ пары</th>
+               <th>Начало пары</th>
+               <th>Конец пары</th>
+               <th>Перемена</th>
+            </tr>
+            <tr>
+               <td> 1пара</td>
+               <td> 8:00 </td>
+               <td> 9:20 </td>
+               <td> 10мин</td>
+            </tr>
+            <tr>
+               <td> 2пара</td>
+               <td> 9:30 </td>
+               <td> 10:50 </td>
+               <td> 20мин</td>
+            </tr>
+            <tr>
+               <td> 3пара</td>
+               <td> 11:10 </td>
+               <td> 12:30 </td>
+               <td> 10мин</td>
+            </tr>
+            <tr>
+               <td> 4пара</td>
+               <td> 12:40 </td>
+               <td> 14:00 </td>
+               <td> 10мин</td>
+            </tr>
+            <tr>
+               <td> 5пара</td>
+               <td> 14:10 </td>
+               <td> 15:30 </td>
+               <td> 10мин</td>
+            </tr>
+            
+         </table>
+         </div>
+      </nav>
+
+      <nav>
+      <div class="text1">
+      <div class="block3">
       <h2>Форма поля</h2>
       <form action="/" method="POST">
          <label>
@@ -110,14 +174,26 @@
             Подпись</label><br />
             <input type="submit" value="Сохранить" />
          </form>
-   </ul> 
-   <main>
+       </div> 
+      </nav>
+   
+      <nav>
+      <div class="text1">
+      <div class="block3">
       <section id="about">
       <h3>Вы перешли на фрагмент</h3>
       <article>
       <p>Вы перешли на фрагмент</p>
       </article>
       </section>
+      </div>
+      </nav>
+
+      <footer> 
+         <div class="block1">
+         <p class="text1"> (c) Михаил Нестренко 2023 </p>
+         </div>
+      </footer>
       
 </body>
 </html>
