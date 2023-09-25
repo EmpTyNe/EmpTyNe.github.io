@@ -117,39 +117,39 @@
       <form action="/" method="POST">
          <label>
             ФИО:<br />
-            <input name="field-name-1"
+            <input name="field-name-1" required
               value="ФИО" />
           </label><br />
          <label>
             Телефон:<br />
             <input name="field-tell"
-              type="tell"
+              type="tell" required
               placeholder="Введите ваш номер телефона" />
           </label><br />
          <label>
             Текстовое поле email:<br />
             <input name="field-email"
-              type="email"
+              type="email" required 
               placeholder="Введите вашу почту" />
           </label><br />
          <label>
             Дата рождения:<br />
             <input name="field-date"
               value="2019-08-13"
-              type="date" />
+              type="date" required/>
           </label><br />
           Пол:<br />
          <label><input type="radio" checked="checked"
-            name="radio-group-1" value="Значение1" />
+            name="radio-group-1" value="Значение1" required />
             Мужской</label>
          <label><input type="radio"
-            name="radio-group-1" value="Значение2" />
+            name="radio-group-1" value="Значение2" required/>
             Женский</label><br />
          <label>
             Любимый язык программирования:
             <br />
             <select name="field-name-4[]"
-              multiple="multiple">
+              multiple="multiple" required>
               <option value="Значение1">Pascal</option>
               <option value="Значение2" selected="selected">C</option>
               <option value="Значение3" selected="selected">C++</option>
@@ -165,11 +165,11 @@
           </label><br />
          <label>
             Биография:<br />
-            <textarea name="field-name-2">Напишите о себе</textarea>
+            <textarea name="field-name-2" required>Напишите о себе</textarea>
           </label><br />
           С контрактом ознакомлен(а):<br />
          <label><input type="checkbox" checked="checked"
-            name="check-1" />
+            name="check-1" required/>
             Подпись</label><br />
             <input type="submit" value="Сохранить" />
          </form>
