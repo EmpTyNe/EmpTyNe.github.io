@@ -57,5 +57,7 @@ a:visited{
   .table{
     border-collapse: collapse ;
   }
-  .th{border: 1px solid #F2Bf5e;}
-  .td{border: 1px solid #F2Bf5e;}
+  .th{border: 1px solid #F2Bf5e;
+        background-color: #090909;}
+  .td{border: 1px solid #F2Bf5e;
+        background-color: #4d1717;}
