@@ -58,6 +58,6 @@ a:visited{
     border-collapse: collapse ;
   }
   .th{border: 1px solid #F2Bf5e;
-        background-color: #090909;}
+        background: #090909;}
   .td{border: 1px solid #F2Bf5e;
-        background-color: #4d1717;}
+        background: #4d1717;}
