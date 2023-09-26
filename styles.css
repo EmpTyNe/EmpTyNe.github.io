@@ -54,8 +54,8 @@ a:visited{
   }
   #navbar li { display: inline; }
 
-  table{
+  .table{
     border: 1px solid #F2Bf5e;
   }
-  th{border: 1px solid #F2Bf5e;}
-  td{border: 1px solid #F2Bf5e;}
+  .th{border: 1px solid #F2Bf5e;}
+  .td{border: 1px solid #F2Bf5e;}
