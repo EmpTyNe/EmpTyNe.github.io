@@ -55,7 +55,7 @@ a:visited{
   #navbar li { display: inline; }
 
   .table{
-    border-collapse: collapse solid;
+    border-collapse: collapse ;
   }
   .th{border: 1px solid #F2Bf5e;}
   .td{border: 1px solid #F2Bf5e;}
