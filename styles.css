@@ -51,12 +51,15 @@ a:visited{
     color: #050505;
 }
 
-#navbar {
+.navbar {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;  
+    flex-direction: column;
+    justify-content: flex-start;
   }
-  #navbar li { display: inline; }
+
 
   .table{
     border-collapse: collapse ;
