@@ -51,9 +51,9 @@ a:visited{
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex;
+    
   }
-#navbar li { display: inline;}
+#navbar li { display: flex;}
 
   .table{
     border-collapse: collapse ;
@@ -65,7 +65,44 @@ a:visited{
 
 
 @media (min-device-width: 320px) and (max-device-width: 568px) {
+    .block1{
+        display: flex;
+        width: 100%; 
+        background-color: #090909;
+        padding: 10px; 
+        height: 110px;
+    }
     
+    .img1{
+        float:left; 
+        margin:10px; 
+        width:100px; 
+        height: 100px;
+    }
+    
+    .block2{
+        display: flex;
+        background-color: #F2Bf5e;
+        padding: 10px;
+    }
+    
+    .block3{
+        display: flex;
+         max-width: 568px;
+         background-color: #595959;
+         margin: 0 auto;
+         margin-top: 20px;
+         padding: 10px;
+    }
+    
+    .block4{
+        display: flex;
+        max-width: 568px;
+        background-color: #595959;
+        margin: 0 auto;
+        padding: 10px;
+    
+    }
   
     
 }
