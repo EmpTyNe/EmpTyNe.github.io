@@ -62,26 +62,7 @@ a:visited{
   .td{border: 1px solid #F2Bf5e;
         background: #4d1717;}
 
-#main-aside-wrapper {
-            display: flex;
-            flex-direction: column;
-    }
-#main-aside-wrapper main, #main-aside-wrapper aside {
-            background-color: #ddd;
-            margin: 10px;
-            padding: 10px;
-    }
-#main-aside-wrapper aside {
-            flex: 1;
-            order: 1;
-    }
-#main-aside-wrapper main {
-            flex: 3;
-            order: 2;
-    }
-          
-@media screen and (min-width: 800px) {
-        #main-aside-wrapper {
-              flex-direction: row;
-        }
-    }
+.main-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
