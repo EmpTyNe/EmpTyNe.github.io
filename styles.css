@@ -57,18 +57,22 @@ a:visited{
   }
   #navbar li { display: inline; }
 
-  .table{
+.table{
     border-collapse: collapse ;
   }
-  .th{border: 1px solid #F2Bf5e;
+.th{border: 1px solid #F2Bf5e;
         background: #090909;}
-  .td{border: 1px solid #F2Bf5e;
+.td{border: 1px solid #F2Bf5e;
         background: #4d1717;}
 
-    nav{
+.nav{
         display: flex;
     }
 
+header{
+    display: flex;
+}
+footer{display: flex;}
 @media (min-device-width: 320px) and (max-device-width: 568px) {
     .block1{
         width: 100%; 
@@ -111,6 +115,7 @@ a:visited{
         list-style-type: none;
       }
       #navbar li { display: inline; }
-  
+      
+    .nav{display: flexq;}
     
 }
