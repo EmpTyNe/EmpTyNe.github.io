@@ -65,7 +65,6 @@ a:visited{
 
 @media (min-device-width: 320px) and (max-device-width: 568px) {
     .block1{
-        display: flex;
         width: 100%; 
         background-color: #090909;
         padding: 10px; 
@@ -73,14 +72,12 @@ a:visited{
     }
     
     .img1{
-        float:left; 
         margin:10px; 
         width:100px; 
         height: 100px;
     }
     
     .block2{
-        display: flex;
         background-color: #F2Bf5e;
         padding: 10px;
     }
