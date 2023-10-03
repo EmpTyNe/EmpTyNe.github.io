@@ -62,6 +62,9 @@ a:visited{
   .td{border: 1px solid #F2Bf5e;
         background: #4d1717;}
 
+    nav{
+        display: flex;
+    }
 
 @media (min-device-width: 320px) and (max-device-width: 568px) {
     .block1{
