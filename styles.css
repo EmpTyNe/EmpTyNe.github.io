@@ -71,10 +71,9 @@ a:visited{
             align-items: center;
         }
 @media (min-device-width: 320px) and (max-device-width: 568px) {
-    .container {
+    nav{
         display: flex;
         flex-direction: column;
-
     }
 
     .block1{
