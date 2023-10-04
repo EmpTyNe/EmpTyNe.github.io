@@ -91,6 +91,9 @@ a:visited{
     .table1{
         order: 2;
     }
+    .href{
+        order: 2;
+    }
     .block4{
         max-width: 960px;
         background-color: #595959;
@@ -105,6 +108,6 @@ a:visited{
       }
       #navbar li { display: block; }
       
-    nav{display: flex;}
+    nav{display: inline;}
     head{display: flex;}
 }
