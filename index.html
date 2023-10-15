@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Мой сайт</title>
    <style> body{background-color: #262626;} </style>
-  
+   
 </head>
 <body style="margin:0;">
    <header>
@@ -185,7 +185,22 @@
        </div>
       </section> 
       </nav>
-   
+      <nav>
+         <div class="text1">
+         <div class="block3">
+            <form onsubmit="return false">
+              <input id="num1" />
+              <select id="select1">
+               <option value="15">Ручки по 15руб</option>
+               <option value="20">Ручки по 20руб</option>
+              </select>
+              
+              <button type="submit" onclick="Math1()">Посчитать</button>
+              <p id="result"></p>
+            </form>  
+         </div> 
+         </div>
+      </nav>
       <nav>
       <div class="text1">
       <div class="block3">
@@ -202,6 +217,14 @@
          <p class="text1"> (c) Михаил Нестренко 2023 </p>
          </div>
       </footer>
-      
+      <script>
+      function Math1(){
+         var r;
+       var num1=Number(document.getElementById("num1").value);
+      var num2=Number(document.getElementById("select1").value);
+      r=num1*num2;
+      document.getElementById("result").innerHTML=r;
+      }
+      </script>
 </body>
 </html>
