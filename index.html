@@ -5,7 +5,7 @@
    <link rel="stylesheet" href="styles.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Мой сайт</title>
-   
+   <script src="6.js"></script>
 </head>
 <body style="margin:0;">
    <header>
@@ -185,6 +185,7 @@
       </section> 
       </nav>
       <nav>
+         <section>\
          <div class="text1">
          <div class="block3">
             <form onsubmit="return false">
@@ -200,6 +201,30 @@
             </form>  
          </div> 
          </div>
+      </section>
+      <section>
+         <div class="text1">
+         <div class="block3">
+            <div id="prodPrice">Выберите тип товара</div>
+            Тип товара:
+            <form>
+              <select name="prodType">
+                <option value="1">Product 1</option>
+                <option value="2">Product 2</option>
+                <option value="3">Product 3</option>
+              </select>
+              <div id="radios">
+                <label><input type="radio" name="prodOptions" value="option1"> Опция 1</label>
+                <label><input type="radio" name="prodOptions" value="option2"> Опция 2</label>
+                <label><input type="radio" name="prodOptions" value="option3"> Опция 3</label>
+              </div>
+              <div id="checkboxes">
+                <label><input type="checkbox" name="prop1"> Свойство 1</label>
+                <label><input type="checkbox" name="prop2"> Свойство 2</label>
+              </div>
+            </form>
+         </div></div>
+      </section>
       </nav>
       <nav>
       <div class="text1">
