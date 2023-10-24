@@ -16,13 +16,14 @@ function updatePrice() {
     // Смотрим какая товарная опция выбрана.
     let radios = document.getElementsByName("prodOptions");
     radios.forEach(function(radio) {
+     if(select.value=="2"){
       if (radio.checked) {
         let optionPrice = prices.prodOptions[radio.value];
         if (optionPrice !== undefined) {
           price += optionPrice;
         }
       }
-    });
+    }});
   
     // Скрываем или показываем чекбоксы.
     let checkDiv = document.getElementById("checkboxes");
@@ -31,13 +32,14 @@ function updatePrice() {
     // Смотрим какие товарные свойства выбраны.
     let checkboxes = document.querySelectorAll("#checkboxes input");
     checkboxes.forEach(function(checkbox) {
+     if(select.value =="3"){
       if (checkbox.checked) {
         let propPrice = prices.prodProperties[checkbox.name];
         if (propPrice !== undefined) {
           price += propPrice;
         }
       }
-    });
+    }});
     
     let prodPrice = document.getElementById("prodPrice");
     prodPrice.innerHTML = price + " рублей";
