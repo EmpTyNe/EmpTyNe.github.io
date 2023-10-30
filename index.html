@@ -205,8 +205,9 @@
       <section>
          <div class="text1">
          <div class="block3">
-            <div id="prodPrice">Выберите тип товара</div>
-            Тип товара:
+         <p id="prodPrice"></p>
+         <input id="num2" />
+           <p> Тип товара:</p>
             <form>
               <select name="prodType">
                 <option value="1">Product 1</option>
@@ -223,6 +224,7 @@
                 <label><input type="checkbox" name="prop2"> Свойство 2</label>
               </div>
             </form>
+            <button type="submit" onclick="updatePrice()">Посчитать</button>
          </div></div>
       </section>
       </nav>
@@ -251,6 +253,8 @@
       if (num1>=0)   r=num1*num2;
       document.getElementById("result").innerHTML=r;
       }
+
       </script>
+     
 </body>
 </html>
