@@ -47,7 +47,7 @@ function updatePrice() {
     prodPrice.innerHTML = price + " рублей";
   }
   if(num<=0){
-    prodPrice= "Не корректно введено кол-во";
+    prodPrice.innerHTML= "Не корректно введено кол-во";
   }
   
 }
