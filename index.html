@@ -246,6 +246,48 @@
       </div>
       </div>
       </section>
+      <section>
+         <div class="block3">
+            <button type="submit" onclick="PopUpShow()">Форма для 8 задания</button>
+        </div>
+        <div class="b-popup" id="popup1">
+            <div class="block3">
+               <form>
+               <label>
+                  ФИО:<br />
+                  <input name="field-name-1" required
+                    value="ФИО" />
+                </label><br />
+               <label>
+                  Телефон:<br />
+                  <input name="field-tell"
+                    type="tell" required
+                    placeholder="Введите ваш номер телефона" />
+                </label><br />
+               <label>
+                  Текстовое поле email:<br />
+                  <input name="field-email"
+                    type="email" required 
+                    placeholder="Введите вашу почту" />
+                </label><br />
+                <label> 
+                  Организация: <br />
+                  <input name="field-name-2" required 
+                   value="Организация"/>
+                </label> <br />
+                <label>
+                  Сообщение:<br />
+                  <textarea name="field-name-2" required>Напишите о себе</textarea>
+                </label><br />
+                <label><input type="checkbox" checked="checked"
+                  name="check-1" required/>
+                  Согласие с политикой обработки персональных данных</label><br />
+                  <input type="submit" value="Сохранить" />
+               </form>
+            </div>
+        </div>
+        </div>
+      </section>
       </nav>
       <nav>
       <div class="text1">
@@ -274,8 +316,10 @@
       }
 
       </script>
+      
        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-      <script src="slick/7.js"  ></script>     
+       <script src="8.js"></script>
+       <script src="slick/7.js"  ></script>     
 </body>
 </html>
