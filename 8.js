@@ -13,5 +13,5 @@ function PopUpHide(){
 history.pushState({
     id : "home",
     source: "web"
-    }, "Задание 8", ""
-)
+    }, "Задание 8", "https://emptyne.github.io/"
+);
