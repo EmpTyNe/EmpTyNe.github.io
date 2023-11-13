@@ -10,8 +10,9 @@ function PopUpShow(){
 function PopUpHide(){
     $("#popup1").hide();
 }
-history.pushState({
-    id : "home",
-    source: "web"
-    }, "Задание 8", "https://emptyne.github.io/"
-);
+window.history.replaceState(
+    {},
+    '',
+    'index.html'
+  )
+  
