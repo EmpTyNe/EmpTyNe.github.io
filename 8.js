@@ -10,7 +10,7 @@ function PopUpShow(){
 function PopUpHide(){
     $("#popup1").hide();
 }
-window.history.replaceState(
+window.history.pushState(
     {},
     '',
     'index.html'
