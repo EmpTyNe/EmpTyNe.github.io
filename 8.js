@@ -1,34 +1,46 @@
-function freezeHistory() {
-    window.history.pushState({}, window.document.title, window.location.href);
-  }
-  
-  function goBack() {
-    /*
-      Custom history back actions: close panel, close popup, close drop-down menu
-    */
-    var popupOpen = $(".popup.active").length > 0;
-    if(popupOpen) {
-      hidePopup();
-      return false;
+let popupOpen = false;
+$(document).ready(function(){
+    //Скрыть PopUp при загрузке страницы    
+    PopUpHide();
+});
+//Функция отображения PopUp
+function PopUpShow(){
+    if (popupOpen) {
+        window.history.back();
     }
-    window.history.back();
-    return true;
-  }
-  
-  function showPopup() {
-    $('.popup').addClass('active');
-    freezeHistory();
-  }
-  
-  function hidePopup() {
-    $('.popup').removeClass('active');
-  }
-  
-  $(window).on("popstate", function(e) {
-    /* 
-       Browsers tend to handle the popstate event differently on page load. 
-       Chrome (prior to v34) and Safari always emit a popstate event on page load, 
-       but Firefox doesn’t.
-    */
-    goBack();
-  })
+    popupOpen = true;
+    window.history.pushState("forward", null, "");
+    $("#popup1").show();
+}
+//Функция скрытия PopUp
+function PopUpHide(){
+    popupOpen = false;
+    $("#popup1").hide();
+}
+
+
+// $(".popup-link").click(function() {
+//     showPopup();
+// });
+
+// $(".popup-close").click(function() {
+//     window.history.back();
+// });
+
+// function showPopup() {
+//     if (popupOpen) {
+//         window.history.back();
+//     }
+//     popupOpen = true;
+//     window.history.pushState("forward", null, "");
+//     $(".popup").addClass("active");
+// }
+
+// function hidePopup() {
+//     popupOpen = false;
+//     $(".popup").removeClass("active");
+// }
+
+// $(window).on("popstate", function() {
+//     hidePopup();
+// });
